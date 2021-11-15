@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int hieu(int a, int b);
+int tich(int a, int b);
 int main()
 {
 	int a, b;
@@ -10,11 +11,14 @@ int main()
 	cout << "Nhap so 2: ";
 	cin >> b;
 	hieu(a, b);
-
+	tich(a, b);
 
 	system("pause");
 	return 0;
 }
 int hieu(int a, int b) {
 	return a - b;
+}
+int tich(int a, int b) {
+	return a * b;
 }
